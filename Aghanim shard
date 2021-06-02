@@ -1,0 +1,10 @@
+--In the file item_purchase_generic.lua
+--buy aghanim shard
+If GetItemStockCount("item_aghanims_shard")>0 
+and bot:GetGold()>=GetItemCost("item_aghanims_shard") 
+and items.HasItem(bot,'item_falcon_blade') then
+bot:ActionInmediate_PurchaseItem("item_aghanim_shard");
+end
+/* Luego solo necesitas ponerle la Falcón Blade 
+En los builds de los bots que tengan ahganims shards
+Pasivos como por ejemplo viper,mars,drow,mirana,bounty etc etc...
