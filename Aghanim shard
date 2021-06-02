@@ -1,0 +1,7 @@
+In the file item_purchase_generic.lua
+--buy aghanim shard
+If GetItemStockCount("item_aghanims_shard")>0 
+and bot:GetGold()>=GetItemCost("item_aghanims_shard") 
+and items.HasItem(bot,'item_falcon_blade') then
+bot:ActionInmediate_PurchaseItem("item_aghanim_shard");
+end
